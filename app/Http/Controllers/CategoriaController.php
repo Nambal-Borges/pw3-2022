@@ -14,7 +14,8 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        return view('admin.main');
+        $categorias = Categoria::all();
+        return view('admin.categorias.index', compact('categorias'));
     }
 
     /**
@@ -24,7 +25,7 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.categorias.create');
     }
 
     /**
@@ -35,7 +36,8 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Categoria::create($request->all());
+        return redirect()->route('categorias.index');
     }
 
     /**
@@ -80,6 +82,7 @@ class CategoriaController extends Controller
      */
     public function destroy(Categoria $categoria)
     {
-        //
+        $categoria->delete();
+        return redirect()->route('categorias.index');
     }
 }
