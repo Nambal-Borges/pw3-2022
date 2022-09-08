@@ -11,6 +11,25 @@ in
 
 wsl
 
-virtual box
 
 route ressource no site do laravel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//sail artisan make:model Subcategoria -m -c --resource  - para criar todo conjunto (model, migration, controller)
+//sail artisan migrate - para rodar todos arquivos dentro de migrations (criar tabelas)
+
+
+a migration serve para rodas os códigos escritos nas migrations.
