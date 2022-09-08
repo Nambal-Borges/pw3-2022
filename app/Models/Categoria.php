@@ -12,4 +12,11 @@ class Categoria extends Model
     protected $fillable = [
       'nome'
     ];
+
+
+
+    //função para mostrar subcategorias na categoria selecionadas
+    public function subcategoria(){
+        return $this->hasMany(Subcategoria::class);
+    }
 }
