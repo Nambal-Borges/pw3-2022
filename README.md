@@ -31,7 +31,7 @@ route ressource no site do laravel
 
 
 
-
+//sail artisan migrate
 
 
 

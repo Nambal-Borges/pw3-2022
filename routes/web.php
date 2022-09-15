@@ -25,3 +25,4 @@ Route::get('/soma/{n1}/{n2}', [\App\Http\Controllers\TesteController::class, 'so
 
 
 Route::resource('categorias', \App\Http\Controllers\CategoriaController::class);
+Route::resource('subcategorias', \App\Http\Controllers\SubcategoriaController::class);
