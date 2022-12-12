@@ -3,7 +3,7 @@
 Este é um bloco onde faço anotações para compreendimento mais efetivo das aulas.
 
 
-
+https://laravel.com/docs/9.x/installation#getting-started-on-linux
 
 executa no larevel - laravel sail, primeiro link
 
